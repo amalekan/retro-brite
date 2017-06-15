@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: white;
+  background: #9B59B6;
+}
+
+html {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #152131;
+  line-height:1.3;
+  background-color: #FBFCFD;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight:normal;
+  font-family: inherit;
+  text-rendering: optimizelegibility;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color:#3F8FFF;
+  transition: all 0.25s ease-in;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0065F1;
+}
+
+h1 {
+  font-family: 'Eczar', serif;
+
+}
