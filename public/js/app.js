@@ -31,8 +31,18 @@ const App = {
     cell.color = this.selectedColor;
     this.render();
   },
+  resetGrid:function () {
+    console.log('resetting the grid');
+    this.selectedColor = 'white';
+    this.makeGrid();
+    this.render();
+  },
   render: function () {
       this.root.innerHTML = '';
+      const resetButton = document.createElement('button');
+      resetButton.textContent = 'Reset';
+      resetButton.addEventListener('click', () => this.resetGrid());
+      this.root.appendChild(resetButton);
       this.grid.forEach((row, rowIndex) => {
       const rowContainer = document.createElement('div');
       rowContainer.style.padding = 0;
